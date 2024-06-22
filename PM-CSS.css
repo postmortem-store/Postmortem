@@ -4031,7 +4031,7 @@ textarea.w-input, textarea.w-select {
     flex-flow: row;
     justify-content: flex-start;
     align-items: center;
-    display: none;
+    display: flex;
   }
 
   .filters.tablet-and-below {
@@ -4039,7 +4039,7 @@ textarea.w-input, textarea.w-select {
     align-items: flex-end;
     padding-top: 0;
     padding-bottom: 0;
-    display: flex;
+    display: none;
   }
 
   .filters.search-box.tablet-and-below {
@@ -4054,12 +4054,12 @@ textarea.w-input, textarea.w-select {
     margin-top: 110px;
     padding-left: 0;
     padding-right: 0;
-    display: flex;
+    display: none;
   }
 
   .text-field {
     width: 300px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-right: 15px;
   }
 
@@ -4316,6 +4316,19 @@ textarea.w-input, textarea.w-select {
     padding-right: 0;
   }
 
+  .filters {
+    padding-bottom: 0;
+    display: flex;
+  }
+
+  .filters.tablet-and-below, .filters.search-box.tablet-and-below {
+    display: none;
+  }
+
+  .text-field {
+    margin-bottom: 30px;
+  }
+
   .text-field.popup {
     background-color: rgba(44, 44, 44, .58);
     border-radius: 8px;
@@ -4327,8 +4340,10 @@ textarea.w-input, textarea.w-select {
   }
 
   .form {
+    margin-top: 40px;
     padding-left: 17px;
     padding-right: 17px;
+    display: flex;
   }
 
   .form.tablet-and-below {
